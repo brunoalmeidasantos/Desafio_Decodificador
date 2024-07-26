@@ -82,7 +82,7 @@ function validaLetras(input){
   
     // Se houver caracteres inválidos, gerar um alerta
     if (invalidChars) {
-      alert('Apenas letras minúsculas são permitidas e sem acento ou pontuação.');
+      alert('Apenas letras minúsculas são permitidas e sem acento!');
       return false;     
     }
     return true;
