@@ -20,9 +20,9 @@
 body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
-    height: 100vh;
+   /* height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 0;*/
 }
 
 .cabecalho {
@@ -32,7 +32,7 @@ body {
 .apresentacao {
     display: flex; 
     align-items: center;
-    gap: 100px;
+    gap: 100%;
     padding: 1%;
 }
 
@@ -41,7 +41,7 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 20%;
     color: var(--cor-secundaria);
 }
 
@@ -49,16 +49,21 @@ body {
     font-family: var(--fonte-primaria);
     font-weight: 400;
     color: var(--cor-secundaria);
-    height: 25px;
+    height: 25%;
 }
 
 .apresentacao__conteudo__texto{
     display: flex;
-    justify-content: column;
-    padding: 1% 1% 1% 5%;
-    gap: 100px;
+    justify-content: left;
+    gap: 50px;
     font-family: var(--fonte-primaria);
     font-weight: 400;
+    width: 100%;
+    padding: 2% 1% 1% 2%;
+}
+
+.apresentacao__conteudo__texto__container2{
+    display: flex; 
 }
 
 .apresentacao__conteudo__texto__container{
@@ -92,11 +97,13 @@ body {
     display: flex;
     justify-content: center;
     padding: 0 0 0 0;
-    width: 30%;
+    width: 20%;
     border-radius: 32px;
     max-width: 100%;
     border: 2px solid;
     border: none;
+    position: absolute;
+    right: 10%;
 }
 
 .apresentacao__conteudo__textoresultado {
@@ -232,12 +239,12 @@ body {
 }
 
 @media (max-width: 1200px){
-    .cabecalho{
+     .cabecalho{
         justify-content: center;
     }
     
     .apresentacao{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 5%;
     }
 
@@ -247,13 +254,20 @@ body {
 }
 
 @media (max-width: 750px){
+    .body{
+        font-size: 14px;
+        padding: 15px;
+    }
+
     .cabecalho{
         justify-content: center;
+        flex-direction: column;
     }
     
     .apresentacao{
         flex-direction: column;
-        padding: 5%;
+        flex-direction: column;
+        /*padding: 5%;*/
     }
 
     .apresentacao__conteudo{
