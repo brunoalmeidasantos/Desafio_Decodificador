@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Desafio Codificador e Decodificador</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+            <a> <img src="./assets/logo_alura.jpg"> </a>
+            <h1 class="apresentacao__conteudo__titulo"><strong class="titulo-destaque">Seja bem-vindo ao Decodificador de textos!</strong></h1>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo" >
+            
+            <label class="apresentacao__conteudo__texto__informativo" for="text">Digite seu texto abaixo:</label>
+            
+                <div class="apresentacao__conteudo__texto">
+                    <textarea maxlength="2000" wrap="hard" class="apresentacao__conteudo__textodigitado" id="text" name="text" rows="25" cols="100"></textarea>
+                    <img id="imagem" class="apresentacao__conteudo__texto__imagemprocura" src="./assets/1.jpg">
+                    <div class="apresentacao__conteudo__texto__container">               
+                        <textarea maxlength="2000" wrap="hard" class="apresentacao__conteudo__textoresultado" id="textoSaida" name="textoSaida" rows="25" cols="100"> </textarea>
+                        <button id="botaoCopia" class="apresentacao__conteudo__texto__botaocopiar" onclick="copyText()">Copiar</button>
+                    </div>    
+                </div>
+            
+            <p class="alerta"> <img src="assets/alerta.png"> <strong>"Apenas letras minúsculas e sem acento!"</strong></p>
+            <div class="botoes">  
+                <a class="botoes__criptografia">
+                    <button onclick="criptografar()" class="botoes__criptografia__criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="botoes__criptografia__descriptografar">Descriptografar</button>
+                </a>
+            </div>
+            
+        </section>
+    </main>
+    
+</body>
+<footer>
+    <a class="rodape">"Desenvolvido por Bruno Santos em parceria com o Curso Oracle One e Alura!"</a>
+</footer>
+</html>
