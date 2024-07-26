@@ -1,5 +1,5 @@
-*Decodificador de Texto
-**Sobre
+### Decodificador de Texto
+#### Sobre
 Uma aplicação que criptografa mensagens digitalizadas e descreva mensagens criptografadas por ele.
 
 As "chaves" de criptografia utilizadas são:
@@ -25,18 +25,18 @@ A página deve ter campos para inserir o texto a ser criptografado ou descritivo
 *Objetivo do projeto
 Atestar e solidificar o aprendizado adquirido durante o módulo de JavaScript, em manipulação de páginas web utilizando Java Script.
 
-Desenvolvido por *Buno Santos (git@github.com:brunoalmeidasantos/Desafio_Decodificador.git)
+Desenvolvido por [Bruno Santos](https://github.com/brunoalmeidasantos/Desafio_Decodificador.git)
 
-*Tecnologias e recursos utilizados.
-HTML5
-Formulários.
-CSS
-Responsabilidade.
-Caixa flexível.
-Consultas de mídia.
-Estilização.
-JavaScript
-DOM.
-Funções.
-Definir tempo limite
-Estruturas de repetição.
+#### Tecnologias e recursos utilizados.
+- HTML5
+- Formulários.
+- CSS
+- Responsabilidade.
+- Caixa flexível.
+- Consultas de mídia.
+- Estilização.
+- JavaScript
+- DOM.
+- Funções.
+- Definir tempo limite
+- Estruturas de repetição.
